@@ -68,3 +68,39 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# City Explorer
+
+**Author**: Abdullah Elian
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+
+## Overview
+<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+this project allow the user to enter any country name then the map will appear to show the user that country on the map## Getting Started
+<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+
+just the user lunch this app address and it will work the link:
+
+## Architecture
+<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+in this project i used React.js framework also i used bootstrap and for the backend i installed the aioxs library to connect with API server . 
+
+## Change Log
+<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+
+01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+
+## Credit and Collaborations
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+
+
+Name of feature: Lab 06
+
+Estimate of time needed to complete: _2 hours
+
+Start time: 2 pm
+
+Finish time: 4pm
+
+Actual time needed to complete: 3:30
