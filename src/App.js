@@ -28,7 +28,8 @@ class App extends React.Component {
       console.log(cityName);
       let url = `https://us1.locationiq.com/v1/search.php?key=pk.b88f218efa97772dabbe983a8f363988&q=${cityName}&format=json`;
       let locResult = await axios.get(url);
-      let weatherUrl=`http://localhost:3010/getNames?cityLan=${locResult.data[0].lat}&cityLon=${locResult.data[0].lon}`;
+      let serverUrl=process.env.REACT_APP_SERVER;
+      let weatherUrl=`${serverUrl}/getNames?cityLan=${locResult.data[0].lat}&cityLon=${locResult.data[0].lon}`;
       let weatherResult= await axios.get(weatherUrl);
       console.log(weatherResult.data);
       console.log(locResult.data[0].lat);
