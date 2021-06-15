@@ -13,8 +13,15 @@ import React from 'react'
     render() {
         return(
             <div>
-                {<p>{this.props.test.description} </p>}
-                 {<p>{this.props.test.date}</p>}
+                {this.props.test.map((item)=>{
+                    return(
+                        <div>
+                            {<p>{item.description} </p>}
+                             {<p>{ item.date}</p>}
+                            </div>
+                    )
+                })}
+                
                 
             </div>
         );
