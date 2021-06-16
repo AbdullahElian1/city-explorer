@@ -12,7 +12,7 @@ import React from 'react'
 
     render() {
         return(
-            <div>
+            <aside>
                 {this.props.test.map((item)=>{
                     return(
                         <div>
@@ -23,7 +23,7 @@ import React from 'react'
                 })}
                 
                 
-            </div>
+            </aside>
         );
     }
       
