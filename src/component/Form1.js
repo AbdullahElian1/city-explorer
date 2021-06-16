@@ -13,10 +13,10 @@ export class Form1 extends React.Component {
                 <Form onSubmit={this.props.showInfo}>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label>City Name</Form.Label>
-                        <Form.Control type="text" placeholder="Amman" name='city' size="lg" />
+                        <Form.Control type="text" placeholder="City Name" name='city' size="lg" />
                     </Form.Group>
-                    <div>
-                        <Button type="submit" variant="primary">Search</Button>{' '}
+                    <div >
+                        <button id="ButtonForm" type="submit" variant="primary" size="lg">Search</button>
                     </div>
                 </Form>
             </div>

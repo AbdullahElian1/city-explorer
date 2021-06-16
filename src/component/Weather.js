@@ -1,4 +1,5 @@
 import React from 'react'
+import WeatherDay from './WeatherDay';
 
  class Weather extends React.Component {
     // constructor(props){
@@ -12,18 +13,13 @@ import React from 'react'
 
     render() {
         return(
-            <aside>
-                {this.props.test.map((item)=>{
-                    return(
-                        <div>
-                            {<p>{item.description} </p>}
-                             {<p>{ item.date}</p>}
-                            </div>
-                    )
-                })}
-                
-                
-            </aside>
+            <div className="aside">
+                <WeatherDay cityName={this.props.cityName} 
+                WeatherInfo={this.props.test}
+                err={this.props.err1}
+                />
+            </div>
+            
         );
     }
       
