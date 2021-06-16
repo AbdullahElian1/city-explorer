@@ -1,39 +1,26 @@
 import React from 'react'
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+// import Card from 'react-bootstrap/Card';
+// import Button from 'react-bootstrap/Button';
 import CardColumns from 'react-bootstrap/CardColumns';
-
+import RendeMovie from './RendeMovie'
 class Movie extends React.Component {
     render() {
         return (
             <div id="movies">
-                                <CardColumns>
-                {this.props.mpvieList.map((item) => {
-                    return (
-                        <div>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={item.imagel} />
-                    <Card.Body>
-                        <Card.Title>{item.title}</Card.Title>
-                        <Card.Text>
-
-                        Over View:<br />
-                        {item.overview}
-                        <br />
-                            <br />
-                             Date Of Released : 
-                            {item.releasedOn}
-
-                        </Card.Text>
-                        <Button variant="primary">See The Movie</Button>
-                    </Card.Body>
-                </Card>
+                <CardColumns>
+                    {this.props.mpvieList.map((item) => {
+                        return (
+                            
+                            <RendeMovie
+                                img={item.imagel}
+                                title={item.title}
+                                overview={item.overview}
+                                releasedOn={item.releasedOn}
+                                 />
 
 
-                </div>
-
-                    )
-                })}
+                        )
+                    })}
                 </CardColumns>
 
 

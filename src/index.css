@@ -18,7 +18,7 @@ code {
   text-align: center;
 }
 
-#root aside {
+.aside {
   width: 25%;
   display: inline-block;
   background-color: blanchedalmond;
@@ -29,6 +29,43 @@ code {
   width:73%;
   
   
+}
+
+.figure{
+  width: 100%;
+}
+
+.figure img{
+  width:90%;
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 700px;
+  margin-top: 1%;
+  border-radius: 2%;
+
+}
+
+#ButtonForm {
+  padding: .5% 23%;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+display: block;
+background-color: #007bff;
+color: white;
+font-size: larger;
+}
+
+.figure-caption{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure-caption div{
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 
