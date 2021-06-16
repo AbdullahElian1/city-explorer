@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
-import Form from './component/Form'
+import Form1 from './component/Form1'
 import Show from './component/Show'
 import Weather from './component/Weather';
 import Movie from './component/Movie'
@@ -35,7 +35,7 @@ class App extends React.Component {
       let weatherUrl=`${serverUrl}/getNames?cityLan=${locResult.data[0].lat}&cityLon=${locResult.data[0].lon}`;
       let weatherResult= await axios.get(weatherUrl);
       console.log(locResult.data);
-      let movieUrl= `http://localhost:3010/movies?cityName=${cityName}`;
+      let movieUrl= `${serverUrl}/movies?cityName=${cityName}`;
       //http://localhost:3010/movies?cityName=amman
       //${serverUrl}/movies?cityName=
       let movieResult= await axios.get(movieUrl);
@@ -68,7 +68,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Form showInfo={this.explore} />
+        <Form1 showInfo={this.explore} />
         <Show map={this.state.displayMap} info={this.state.cityInfo} err={this.state.displayErr}  />
 
         <Weather test={this.state.wheathr} err1={this.state.err}/>

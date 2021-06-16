@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#root{
+  /* background-color:; */
+}
+.container{
+  text-align: center;
+}
+
+#root aside {
+  width: 25%;
+  display: inline-block;
+  background-color: blanchedalmond;
+}
+
+#movies{
+  float: right;
+  width:73%;
+  
+  
+}
+
+
